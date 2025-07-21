@@ -1,5 +1,5 @@
 name = "max"
-age = "11"
+age = 11
 # sports = "basketball","lacrosse""
 sport = "basketball"
 teacher = "farrah"
