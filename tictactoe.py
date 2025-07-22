@@ -1,53 +1,32 @@
-from random import randint
-
-
-
-while (True):
-
-
-
-    print("rock paper scissors shoot")
-
-    computor = randint(0,2)
-
-    user = input("press [r] for rock, [p] for paper, [s] for scissor. ")
-
-
-
-    # win check
-    if computor == 0:
-        if user == "p":
-            print("you win computor chose rock")
-        elif user == "s":
-            print("you lose computor played rock") 
-        elif user == "r":
-            print("it's a tie computor chose rock")
-        else:
-            print("not an option")
-
-    elif computor == 1:
-        if user == "r":
-            print ("you lose computor chose paper")
-        elif user == "p":
-            print("you tied computor chose paper")
-        elif user == "s":
-            print("you won computor chose scissor")
-
-    elif computor == 2:
-        if user == "r":
-            print("you won computor chose scissors")
-        elif user == "p":
-            print("you lost")
-        elif user == "s":
-            print("you tied computor chose scissor")
-
-    answer = input("Do you want to play more? y/n ")
+#list for board
+board = []
+for i in range (3):
+    slot = []
+    for j in range (3):
+        slot.append("")
+    board.append(slot)
     
 
-    if answer == "y":
-        continue
-    elif answer == "n":
-        break
-    else:
-        print("Invalid, shutting down game")
-        break
+move = 0
+
+player = "X"
+
+print(" " + board[0][0], "|", board[0][1] +  " | " , board[0][2])
+print("---------")
+print(" "+ board[1][0] + " | " + board[1][1] + " | " ,board[1][2])
+print("---------")
+print(" " + board[2][0] + " | " + board [2][1], "|", board[2][2])
+
+print("lets start playing!!!!!!!")
+row = int(input("Which row would you like to place your piece in? "))
+col = int(input ("Which column would you like to place your piece in? "))
+
+board[row][col]=player
+
+
+print(" " + board[0][0], "|", board[0][1] +  " | " , board[0][2])
+print("---------")
+print(" "+ board[1][0] + " | " + board[1][1] + " | " ,board[1][2])
+print("---------")
+print(" " + board[2][0] + " | " + board [2][1], "|", board[2][2])
+
