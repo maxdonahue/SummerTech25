@@ -1,0 +1,25 @@
+#title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color:rgb(255, 100, 126);
+    
+
+}
+
+body{
+background-color: blue;
+color:rgb(167, 210, 248);
+font-size: 50px;
+font: bolder;
+}
+
+
+#for{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+    
