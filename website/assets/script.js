@@ -5,8 +5,8 @@ if (name.toLowerCase() === "matthew laterza" ||name.toLowerCase() === "matt late
 alert("no your name is matty mcrae")
 
 }
-else if (name.toLowerCase()== "matt" || name){
-    
+else if (name.toLowerCase()== "thew"){
+    alert("Hi thew")
 }
 else{
     alert("oh hi "+ name)
